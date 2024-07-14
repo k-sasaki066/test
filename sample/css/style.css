@@ -2,19 +2,43 @@ body{
   width: 100%;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cadetblue;
+}
+
 .header {
     background: #000;
 }
 
 .header__inner {
     margin: 0 auto;
-    padding: 20px 15px;
+    padding: 20px;
     max-width: 1230px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header__logo {
-    color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
+}
+
+.header-nav__list {
+    display: flex;
+}
+
+.header-nav__item {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-nav__item:not(:last-child) {
+    margin-right: 20px;
 }
